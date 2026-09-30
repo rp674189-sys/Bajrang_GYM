@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c0f0b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=yes"><title>Bajrang Gym – Build Strength. Build Discipline.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0a2e;--bg2:#1b1247;--ink:#f7f3ff;--mute:#b9b0e0;--acc:#ff5a36;--acc2:#ffd23f;--line:#3a2b7a;--btn-ink:#0f0a2e;--c3:#22d3ee;--c4:#b45cff;--c5:#a3e635;--c6:#ff4fa3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f2ff;--bg2:#e6dcff;--ink:#1a0f3d;--mute:#54467f;--acc:#e8431f;--acc2:#9a5a00;--line:#cbbdf5;--btn-ink:#ffffff;--c3:#0891b2;--c4:#7c3aed;--c5:#4d7c0f;--c6:#db2777}}
+:root[data-theme="dark"]{--bg:#0f0a2e}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;letter-spacing:.02em;line-height:1.05}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Anton,Impact,sans-serif;font-size:22px;letter-spacing:.06em}.logo b{color:var(--acc);font-weight:400}
+.links{display:flex;gap:22px;font-weight:600;font-size:14px}.links a:hover{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:var(--btn-ink);font-weight:800;padding:13px 26px;border-radius:999px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--ink);border:2px solid var(--acc)}
+@media(max-width:700px){.links{display:none}}
+.hero{position:relative;padding:70px 0 90px;background:radial-gradient(420px 360px at 90% 5%,rgba(255,90,54,.35),transparent 65%),radial-gradient(380px 320px at 0% 55%,rgba(180,92,255,.30),transparent 65%),radial-gradient(360px 300px at 80% 100%,rgba(34,211,238,.22),transparent 65%),var(--bg)}
+.mark{font-family:Anton,Impact,sans-serif;font-size:clamp(76px,19vw,210px);line-height:.9;color:transparent;-webkit-text-stroke:2px var(--acc);letter-spacing:.01em;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.mark span{color:var(--acc);-webkit-text-stroke:0;display:block;font-size:.42em;letter-spacing:.32em;margin-top:.15em}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+.hero p.lead{max-width:520px;color:var(--mute);font-size:18px;margin:26px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:50px;padding-top:26px;border-top:1px solid var(--line)}
+.stats div{font-size:14px;color:var(--mute)}.stats b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:34px;color:var(--acc2)}
+.belt{background:linear-gradient(90deg,var(--acc),var(--c6),var(--c4),var(--c3));color:var(--btn-ink);overflow:hidden;white-space:nowrap;padding:12px 0;font-family:Anton,Impact,sans-serif;font-size:22px;letter-spacing:.08em}
+.belt div{display:inline-block;animation:slide 26s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.belt div,.mark{animation:none}html{scroll-behavior:auto}}
+section{padding:84px 0}
+h2{font-size:clamp(36px,6vw,58px);margin-bottom:14px}
+.sub{color:var(--mute);max-width:560px;margin-bottom:40px}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.owner{background:var(--bg2);border:1px solid var(--line);border-radius:6px 44px 6px 44px;padding:34px}
+.owner .disp{font-size:34px;color:var(--acc2)}.owner small{color:var(--mute);display:block;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--bg2);border:1px solid var(--line);padding:28px;border-left:5px solid var(--acc);border-radius:4px 22px 4px 22px}
+.card h3{font-size:26px;margin-bottom:8px}.card p{color:var(--mute);font-size:15px}
+.alt{background:var(--bg2)}
+.alt .card{background:var(--bg)}
+.why{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 34px}
+.why li{padding:14px 0 14px 34px;border-bottom:1px solid var(--line);position:relative}
+.why li::before{content:"";position:absolute;left:0;top:22px;width:18px;height:6px;background:var(--acc);box-shadow:-5px -4px 0 -1px var(--acc2)}
+.contact{text-align:center;background:radial-gradient(360px 300px at 15% 100%,rgba(180,92,255,.35),transparent 70%),radial-gradient(360px 300px at 90% 100%,rgba(255,90,54,.32),transparent 70%),var(--bg)}
+.phone{font-family:Anton,Impact,sans-serif;font-size:clamp(34px,8vw,72px);color:var(--acc2);display:block;margin:18px 0 28px;letter-spacing:.04em}
+.contact .cta{justify-content:center}
+footer{padding:26px 0;text-align:center;color:var(--mute);font-size:13px;border-top:1px solid var(--line)}
+.fab{display:flex;align-items:center;gap:8px;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;background:var(--acc);color:var(--btn-ink);font-weight:800;padding:14px 20px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+
+.hero .wrap{position:relative;z-index:1}
+.art{position:absolute;right:-50px;top:30px;width:min(540px,58vw);pointer-events:none}
+@media(max-width:800px){.art{opacity:.2;right:-140px;top:150px;width:440px}}
+.spin{transform-origin:200px 200px;animation:spin 50s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.spin{animation:none}}
+.ico{width:46px;height:46px;stroke:var(--acc);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px;display:block}
+.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.z{position:relative;min-height:240px;border-radius:6px 44px 6px 44px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;color:#fff}
+.z:nth-child(1){background:linear-gradient(160deg,#ff4fa3,#5b1b8f)}
+.z:nth-child(2){background:linear-gradient(160deg,#0ea5c6,#1b2a7a)}
+.z:nth-child(3){background:linear-gradient(160deg,#ff8a1f,#b3201a)}
+.z:nth-child(4){background:linear-gradient(160deg,#5fbf1f,#0b5a3a)}
+.z svg{position:absolute;right:-18px;top:-10px;width:170px;height:170px;stroke:#fff;opacity:.28;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.z h3{font-size:28px}.z p{font-size:14px;opacity:.9}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.step{border-top:4px solid var(--acc);padding-top:16px}
+.step .disp{font-size:34px;color:var(--acc2)}.step p{color:var(--mute)}
+
+html{background:#0f0805;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body{max-width:480px;margin:0 auto;padding-bottom:96px;font-family:-apple-system,BlinkMacSystemFont,Manrope,system-ui,sans-serif;box-shadow:0 0 60px rgba(0,0,0,.5)}
+.links{display:none!important}
+.wrap{padding:0 20px}
+.mark{font-size:min(21vw,96px)}
+h2{font-size:38px}
+.phone{font-size:38px}
+.art{width:330px;right:-90px;top:70px;opacity:.35}
+.about{grid-template-columns:1fr;gap:28px}
+section{padding:56px 0}
+.hero{padding:44px 0 60px}
+.btn{padding:16px 26px;font-size:17px;text-align:center}
+.cta .btn{flex:1 1 100%}
+.pi{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top:1px solid var(--line);z-index:20}
+.bar a{flex:1;padding:15px 10px;border-radius:16px;font-weight:800;font-size:17px;display:flex;align-items:center;justify-content:center;gap:8px}
+.bar .c{background:var(--acc);color:var(--btn-ink)}
+.bar .w{background:#25d366;color:#04331a}
+.bar a:active,.btn:active{transform:scale(.97)}
+
+.card:nth-child(2){border-left-color:var(--c3)}.card:nth-child(2) .ico{stroke:var(--c3)}
+.card:nth-child(3){border-left-color:var(--c6)}.card:nth-child(3) .ico{stroke:var(--c6)}
+.card:nth-child(4){border-left-color:var(--c5)}.card:nth-child(4) .ico{stroke:var(--c5)}
+.card:nth-child(5){border-left-color:var(--c4)}.card:nth-child(5) .ico{stroke:var(--c4)}
+.card:nth-child(6){border-left-color:var(--acc2)}.card:nth-child(6) .ico{stroke:var(--acc2)}
+.step:nth-child(2){border-top-color:var(--c3)}.step:nth-child(3){border-top-color:var(--c6)}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:6px 32px 6px 32px;padding:24px}
+.day{font-size:44px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.chips span{padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;background:color-mix(in srgb,var(--c3) 22%,transparent);border:1px solid var(--c3)}
+.chips span:nth-child(2n){background:color-mix(in srgb,var(--c6) 22%,transparent);border-color:var(--c6)}
+.chips span:nth-child(3n){background:color-mix(in srgb,var(--c5) 22%,transparent);border-color:var(--c5)}
+.note{font-size:13px;color:var(--mute)}
+label{display:block;text-align:left;font-weight:700;font-size:14px;margin:12px 0 6px}
+input,select{width:100%;font:inherit;font-size:16px;padding:14px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--c3)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.res{margin-top:18px;text-align:center}
+.res b{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:56px;display:block;line-height:1}
+.plans{display:grid;gap:16px}
+.plan{background:var(--bg2);border-radius:6px 32px 6px 32px;padding:22px;border-top:6px solid var(--acc);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.plan:nth-child(2){border-top-color:var(--c3)}.plan:nth-child(3){border-top-color:var(--c6)}.plan:nth-child(4){border-top-color:var(--c5)}
+.plan .disp{font-size:34px}.plan p{color:var(--mute);font-size:14px}
+.plan a{background:var(--ink);color:var(--bg);font-weight:800;padding:12px 18px;border-radius:999px;font-size:15px;white-space:nowrap}
+.join{text-align:left;margin:26px 0}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-db" viewBox="0 0 24 24"><path d="M6 7v10M3 9v6M18 7v10M21 9v6M6 12h12"/></symbol>
+<symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+<symbol id="i-kb" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><path d="M8.5 10.5C8 4 16 4 15.5 10.5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+</defs></svg>
+<nav><div class="wrap"><a class="logo" href="#top">BAJRANG <b>GYM</b></a>
+<div class="links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#zones">Gym</a><a href="#why">Why us</a><a href="#contact">Contact</a></div>
+<a class="btn" href="tel:+918155809850" target="_blank" rel="noopener" style="padding:8px 18px;font-size:14px">Call now</a></div></nav>
+
+<header class="hero" id="top"><svg class="art" viewBox="0 0 400 400" aria-hidden="true">
+<g class="spin"><circle cx="200" cy="200" r="185" fill="none" stroke="var(--acc)" stroke-width="16"/>
+<circle cx="200" cy="200" r="158" fill="none" stroke="var(--acc2)" stroke-width="2" stroke-dasharray="4 10"/>
+<circle cx="200" cy="200" r="120" fill="var(--bg2)" stroke="var(--acc)" stroke-width="3"/>
+<g stroke="var(--line)" stroke-width="6"><path d="M200 90v50M200 260v50M90 200h50M260 200h50M122 122l35 35M243 243l35 35M278 122l-35 35M157 243l-35 35"/></g>
+<circle cx="200" cy="200" r="34" fill="var(--acc)"/><circle cx="200" cy="200" r="12" fill="var(--bg)"/></g>
+<g transform="rotate(38 200 200)"><rect x="192" y="-10" width="16" height="250" rx="8" fill="var(--acc2)" opacity=".9"/>
+<circle cx="200" cy="-10" r="42" fill="var(--acc)" stroke="var(--acc2)" stroke-width="5"/>
+<path d="M200-52v-16M242-10h16M158-10h-16M230-40l12-12M170-40l-12-12M230 20l12 12M170 20l-12 12" stroke="var(--acc2)" stroke-width="6" stroke-linecap="round"/></g>
+</svg>
+<div class="wrap">
+<h1 class="mark">BAJRANG<span>GYM</span></h1>
+<p class="lead">Strength like Hanuman. Discipline every day. Train with proper guidance in a gym built for real results.</p>
+<div class="cta"><a class="btn" href="tel:+918155809850" target="_blank" rel="noopener">Join today: call now</a><a class="btn o" href="https://wa.me/918155809850?text=Hello%20Bajrang%20Gym%2C%20I%20want%20to%20join." target="_blank" rel="noopener">WhatsApp us</a></div>
+<div class="stats"><div><b>Strength</b>Free weights &amp; machines</div><div><b>Cardio</b>Fat loss &amp; stamina</div><div><b>Guidance</b>Personal attention</div></div>
+</div></header>
+
+<div class="belt" aria-hidden="true"><div>STRENGTH ✦ DISCIPLINE ✦ POWER ✦ FITNESS ✦ STRENGTH ✦ DISCIPLINE ✦ POWER ✦ FITNESS ✦ STRENGTH ✦ DISCIPLINE ✦ POWER ✦ FITNESS ✦ STRENGTH ✦ DISCIPLINE ✦ POWER ✦ FITNESS ✦ </div></div>
+
+<section id="today"><div class="wrap"><div class="box">
+<p class="note">Today's workout</p><div class="day disp" id="wd">Loading</div>
+<div class="chips" id="wx"></div>
+<p class="note">Sample plan. Ask Amit for a plan made for your body and goal.</p></div></div></section>
+
+<section id="about"><div class="wrap about">
+<div><h2>Your body. Your best version.</h2>
+<p class="sub" style="margin-bottom:16px">Bajrang Gym is for everyone who wants to get stronger, leaner and healthier, whether you are just starting or already lifting heavy.</p>
+<p style="color:var(--mute);max-width:520px">We keep training simple: the right exercise, the right form, and steady effort. Come as you are. Leave stronger every week.</p></div>
+<div class="owner"><small>Owner &amp; trainer</small><div class="disp">Amit Thakor</div>
+<p style="color:var(--mute);margin:10px 0 22px">Talk to Amit directly about your goals, timings and membership.</p>
+<a class="btn" href="tel:+918155809850" target="_blank" rel="noopener">+91 81558 09850</a></div>
+</div></section>
+
+<section class="alt" id="programs"><div class="wrap">
+<h2>What you can train</h2><p class="sub">Pick a goal. We help you build the plan.</p>
+<div class="grid">
+<div class="card"><svg class="ico"><use href="#i-db"/></svg><h3>Weight training</h3><p>Build muscle and power with free weights and machines.</p></div>
+<div class="card"><svg class="ico"><use href="#i-fire"/></svg><h3>Fat loss</h3><p>Workout and routine to burn fat and keep it off.</p></div>
+<div class="card"><svg class="ico"><use href="#i-heart"/></svg><h3>Cardio &amp; stamina</h3><p>Improve heart health, energy and endurance.</p></div>
+<div class="card"><svg class="ico"><use href="#i-kb"/></svg><h3>Bodybuilding</h3><p>Split routines and form coaching for size and shape.</p></div>
+<div class="card"><svg class="ico"><use href="#i-user"/></svg><h3>Personal training</h3><p>One-to-one attention for faster, safer progress.</p></div>
+<div class="card"><svg class="ico"><use href="#i-bolt"/></svg><h3>Beginner start</h3><p>New to gym? We teach you from day one.</p></div>
+</div></div></section>
+
+<section id="bmi"><div class="wrap"><h2>Check your BMI</h2><p class="sub">Enter your height and weight to see where you start.</p>
+<div class="box"><div class="row"><div><label for="h">Height (cm)</label><input id="h" type="number" inputmode="decimal" placeholder="170"></div>
+<div><label for="w">Weight (kg)</label><input id="w" type="number" inputmode="decimal" placeholder="70"></div></div>
+<button class="btn" style="width:100%;border:0;margin-top:18px;font-family:inherit;cursor:pointer" id="bb">Calculate BMI</button>
+<div class="res" id="br"></div></div></div></section>
+
+<section class="alt" id="zones"><div class="wrap">
+<h2>Inside the gym</h2><p class="sub">Every corner is built for one thing: your progress.</p>
+<div class="zones">
+<div class="z"><svg><use href="#i-db"/></svg><h3>Free weights</h3><p>Dumbbells, barbells and plates for heavy days.</p></div>
+<div class="z"><svg><use href="#i-heart"/></svg><h3>Cardio zone</h3><p>Warm up, burn fat, build stamina.</p></div>
+<div class="z"><svg><use href="#i-kb"/></svg><h3>Machines</h3><p>Safe, guided movement for every muscle.</p></div>
+<div class="z"><svg><use href="#i-fire"/></svg><h3>Power floor</h3><p>Push your limits with a strong crowd around you.</p></div>
+</div></div></section>
+
+<section id="why"><div class="wrap">
+<h2>Why train here</h2><p class="sub">A gym where you are seen, guided and pushed.</p>
+<ul class="why">
+<li>Personal guidance from the owner</li><li>Strong, motivating atmosphere</li><li>Programs for men and beginners to advanced</li><li>Diet and lifestyle tips</li><li>Clean, well-kept training floor</li><li>Simple, honest membership</li>
+</ul></div></section>
+
+<section class="alt" id="journey"><div class="wrap">
+<h2>Your first 90 days</h2><p class="sub">A simple path from joining to feeling strong.</p>
+<div class="steps">
+<div class="step"><div class="disp">Day 1</div><p>Meet Amit, share your goal and get your first workout plan.</p></div>
+<div class="step"><div class="disp">Week 4</div><p>Your form gets cleaner, energy goes up and the habit sticks.</p></div>
+<div class="step"><div class="disp">Month 3</div><p>You lift heavier, look sharper and feel the change.</p></div>
+</div></div></section>
+
+<section id="plans"><div class="wrap"><h2>Membership plans</h2><p class="sub">Choose how long you want to train. Call Amit for today's fees.</p>
+<div class="plans">
+<div class="plan"><div><div class="disp">1 Month</div><p>Try it and feel the change</p></div><a href="tel:+918155809850">Ask fees</a></div>
+<div class="plan"><div><div class="disp">3 Months</div><p>Build a solid habit</p></div><a href="tel:+918155809850">Ask fees</a></div>
+<div class="plan"><div><div class="disp">6 Months</div><p>Real body transformation</p></div><a href="tel:+918155809850">Ask fees</a></div>
+<div class="plan"><div><div class="disp">12 Months</div><p>Make fitness your lifestyle</p></div><a href="tel:+918155809850">Ask fees</a></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>Start your first workout</h2><p class="sub" style="margin:0 auto">Call or message Amit Thakor to ask about plans and timings.</p>
+<div class="box join"><h3 style="font-size:28px">Join on WhatsApp</h3>
+<label for="n">Your name</label><input id="n" placeholder="Enter your name" autocomplete="name">
+<label for="g">Your goal</label><select id="g"><option>Weight training</option><option>Fat loss</option><option>Cardio &amp; stamina</option><option>Bodybuilding</option><option>Personal training</option></select>
+<button class="btn" id="jb" style="width:100%;border:0;margin-top:18px;font-family:inherit;cursor:pointer;background:#25d366;color:#04331a">Send to Amit</button></div>
+<a class="phone" href="tel:+918155809850" target="_blank" rel="noopener">+91 81558 09850</a>
+<div class="cta"><a class="btn" href="tel:+918155809850" target="_blank" rel="noopener">Call now</a><a class="btn o" href="https://wa.me/918155809850?text=Hello%20Bajrang%20Gym%2C%20I%20want%20to%20join." target="_blank" rel="noopener">WhatsApp</a></div>
+</div></section>
+
+<footer>© <span id="y"></span> Bajrang Gym · Amit Thakor</footer>
+<div class="bar"><a class="c" href="tel:+918155809850"><svg class="pi"><use href="#i-phone"/></svg>Call now</a><a class="w" href="https://wa.me/918155809850?text=Hello%20Bajrang%20Gym%2C%20I%20want%20to%20join." target="_top" rel="noopener">WhatsApp</a></div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();window.location.href='tel:+918155809850'})});
+
+var W=[["Rest and stretch",["Light walk","Stretching","Foam rolling","Deep breathing"]],["Chest and triceps",["Bench press","Incline press","Cable fly","Triceps pushdown"]],["Back and biceps",["Lat pulldown","Barbell row","Seated row","Bicep curl"]],["Leg day",["Squats","Leg press","Lunges","Calf raises"]],["Shoulders",["Overhead press","Lateral raise","Face pull","Shrugs"]],["Arms and abs",["Barbell curl","Dips","Hammer curl","Crunches"]],["Cardio and core",["Treadmill intervals","Skipping","Leg raises","Plank"]]];
+var d=W[new Date().getDay()];document.getElementById('wd').textContent=d[0];
+document.getElementById('wx').innerHTML=d[1].map(function(x){return '<span>'+x+'</span>'}).join('');
+document.getElementById('bb').onclick=function(){var h=+document.getElementById('h').value/100,w=+document.getElementById('w').value,r=document.getElementById('br');
+if(!h||!w){r.innerHTML='<p class="note">Enter both height and weight.</p>';return}
+var b=w/(h*h),t,c;if(b<18.5){t='Underweight: focus on strength and good food';c='var(--c3)'}else if(b<25){t='Healthy weight: keep building strength';c='var(--c5)'}else if(b<30){t='Overweight: fat loss plan will help';c='var(--acc2)'}else{t='High BMI: start with guided training';c='var(--acc)'}
+r.innerHTML='<b style="color:'+c+'">'+b.toFixed(1)+'</b><p>'+t+'</p>'};
+document.getElementById('jb').onclick=function(){var n=document.getElementById('n').value.trim()||'a new member',g=document.getElementById('g').value;
+window.open('https://wa.me/918155809850?text='+encodeURIComponent('Hello Amit, my name is '+n+'. I want to join Bajrang Gym for '+g+'.'),'_top')};
+</script>
+</body>
+</html>
